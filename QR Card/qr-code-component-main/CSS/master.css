@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap'); 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--White: hsl(0, 0%, 100%);
+--LightGray: hsl(212, 45%, 89%);
+--GrayishBlue: hsl(220, 15%, 55%);
+--DarkBlue: hsl(218, 44%, 22%);
+--FontSizeP: 15px;
+--FontFamily: 'Rubik Vinyl' , cursive;
+--fontWeight400: 400;
+--fontWeight700: 700;
+--Mobile: 375px;
+--Desktop: 1440px
+}
+
+body {
+    height: 100vh;
+    background-color: var(--LightGray, gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.attribution{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end !important; 
+    margin-bottom: 15px;
+    position: absolute;
+}
+
+a{
+    margin-left: 5px;
+}
+
+.qr-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+img {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: var(--White,white);
+    border-radius: 20px;
+    position: relative;
+    
+}
+
+.main-text {
+    font-weight: var(--fontWeight700);
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-weight: var(--fontWeight400);
+    font-family: sans-serif;
+    color: var(--GrayishBlue);
+}
+
+
+.all-text {
+   font-size: var(--FontSizeP);
+   text-align: center;
+   margin: 15px 0;
+   width: 225px;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+}
